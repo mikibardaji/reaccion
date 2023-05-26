@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consulta de Palabras</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/reaccion2.js"></script>
+    <link rel="stylesheet" href="css/reaccion2.css">
+</head>
+<body>
+    <h1>Consulta de Palabras</h1>
+
+    <form method="post" action="uploads/consulta.php">
+        <input type="text" name="buscar" placeholder="Ingrese el texto a buscar">
+        <input type="submit" name="consulta1" value="Siguiente palabra">
+        <input type="submit" name="consulta2" value="Es la palabra?">
+    </form>
+
+    <div id="resultados">
+        <!-- Aquí se mostrarán los resultados de las consultas -->
+    </div>
+
+    <div id="div2">
+        <a href="carga2.html" style="text-decoration: none; color: white;">Carregar paraules</a>
+    </div>
+    <div id="div1">
+        <a href="index.html" style="text-decoration: none; color: white;">Tornar al index</a>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionar palabras uno lleva a la otra</title>
+    <link rel="stylesheet" href="css/reaccion2.css">
+</head>
+<body id="carga">
+    <ol>
+        <li>Seleccionar fitxer que te les paraules de una lleva a la otra</li>
+        <li>Donar a subir archivo</li>
+        <li>Despres donar cargar palabras</li>
+    </ol>
+    <form action="php/upload_otra.php" method="post" enctype="multipart/form-data">
+        Seleccione un archivo: <input type="file" name="fileToUpload" id="fileToUpload">
+        <br>
+        <br>
+        <input type="submit" value="Subir archivo" name="submit">
+      </form>
+      <h6>Cargar palabras de fichero</h6>
+      <form action="php/cargar_otra.php" method="post">
+        <input type="submit" value="Cargar palabras" name="ejecutar">
+    </form>
+      <h6><a href="index.html">Volver a pagina de reacción en cadena</a></h6>
+</body>
+</html>

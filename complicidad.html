@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Reaccion en cadena</title>
+  <script src="js/cuenta_regresiva.js"></script>
+  <link rel="stylesheet" href="css/cuenta.css">
+</head>
+<body>
+  <div id="wrapper">
+      <div id="izquierda"></div>
+      <div id="principal">
+      <a href="carga.html" class="myButton">Seleccionar fichero  </a>
+      <!--<button id="btnCargar2" onclick="cargar()">Seleccionar fichero</button>-->
+      <button id="btnCargar" onclick="cargar()">Cargar Palabras</button>
+      <button id="btnIniciar" onclick="iniciarCuentaRegresiva()">INICIAR TEMPS</button>
+      <button id="btnPausar" onclick="pausarCuentaRegresiva()">Reiniciar temps al principi</button>
+      <button id="btnSumar" onclick="sumar()">Acierto</button>
+      <button id="btnRestar" onclick="restar()">Fallo</button>
+
+      <p id="contador"></p>
+      <p id="carga"></p>
+      <p>Contador: <span id="aciertos">0</span></p>
+      <h2>Palabra: <span id="palabra"></span></h2>
+      <p id="cargados"></p>
+      </div>
+      <div id="derecha"></div>
+  </div>
+  <table>
+    <tr>
+      <td class="mayus">CONTRARI</td>
+      <td class="minus">Que no es (si diu no, se li ha de tornar)</td>
+    </tr>
+    <tr>
+      <td class="mayus">SINONIMS </td>
+      <td class="minus">Que sinonimo tiene (si diu sinonimo se li ha de tornar)</td>
+    </tr>
+    <tr>
+      <td class="mayus">SEQUENCIES </td>
+      <td class="minus">Que sigue a (mes, dia, planetas, primero/segundo)</td>
+    </tr>
+    <tr>
+      <td class="mayus">ENUMERACIONS</td>
+      <td class="minus">Que es/son (enumeració) Canarias/Baleares (Islas), gato/perro/rata (animal/es)</td>
+    </tr>
+    <tr>
+      <td class="mayus">PAÏSOS</td>
+      <td class="minus">Que pais tiene XXXX (també el segon la diu)</td>
+    </tr>
+    <tr>
+      <td class="mayus">CIUTATS</td>
+      <td class="minus">Que capital tiene XXXX (tambe el segon ho diu)</td>
+    </tr>
+    <tr>
+      <td class="mayus" rowspan="2">LLETRA</td>
+      <td class="minus">Con que letra empieza (Lletra)</td>
+    </tr>
+    <tr>
+      <td class="mayus">Que letra empieza (Lletra)</td>
+    </tr>
+    <tr>
+      <td class="mayus">COLOR</td>
+      <td class="minus">Que color tiene el/la/los/las XXXX (rojo,roja,rojos,rojas)</td>
+    </tr>
+    <tr>
+      <td class="mayus">FAMILIAR</td>
+      <td class="minus">Que no es XXXX(familiar) --> nieto<->abuelo, nieta<->abuela, hijo<->padre, sobrino<..>tio</td>
+    </tr>
+  </table>
+  <a href="index.html" class="myButton">Volver al indice principal  </a>
+  <!--<div id="imatge"></div>-->  
+</body>
+</html>
+
